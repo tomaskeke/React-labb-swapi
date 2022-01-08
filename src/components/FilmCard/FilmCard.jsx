@@ -13,7 +13,7 @@ import { Modal, Divider } from '@mui/material';
 
 
 
-export default function FilmsCard({ film,}) {
+export default function FilmsCard({ film, dark }) {
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -33,10 +33,14 @@ export default function FilmsCard({ film,}) {
         boxShadow: 24,
         overflow: 'scroll',
         overflowX: 'hidden',
-
         p: 4,
       };
-      
+
+    const dividerStyle = {
+        height: '4px',
+        bgcolor: 'gray'
+    };
+
     return (
         <Box>
          <Card variant="outlined" key={uuidv4()}>        
@@ -44,7 +48,7 @@ export default function FilmsCard({ film,}) {
                 <Typography key={uuidv4()} sx={{fontSize: 16, fontWeight: 'bold', textAlign: 'center'}} color="text.primary" gutterBottom>
                     {film.title}
                 </Typography>
-                <Divider color="deepOrange.primary" sx={{height: '4px'}} />
+                <Divider sx={dividerStyle} />
                 <Typography sx={{fontSize: 14, textAlign: 'left', m: '10px'}} color="text.secondary" gutterBottom>
             
                 Episode: {film.episode_id}        

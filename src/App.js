@@ -29,7 +29,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
       <ResponsiveAppBar dark={dark} setDark={setDark}/>
-      <Films />
+      <Films dark={dark} />
     </ThemeProvider>
   );
 }
