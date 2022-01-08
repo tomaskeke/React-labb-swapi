@@ -21,12 +21,12 @@ const Films = () => {
     
     const loadingIsDone = () => { 
         return (
-        <Grid container p={4} sx={{justifyContent: 'center'}} spacing={{md: 4}}  columns={{ xs: 2, sm: 4, md: 6}} key={uuidv4()}>
+        <Grid container p={2} sx={{justifyContent: 'center'}} spacing={{md: 2}}  columns={{ xs: 2, sm: 4, md: 6}} key={uuidv4()}>
         {films.length > 0 &&  
           films.sort((a, b) => a.episode_id - b.episode_id).map((film) => {
               
               return (
-                  <Paper key={uuidv4()} sx={{ maxWidth: 'md', align: 'center', m: 2}}>
+                  <Paper key={uuidv4()} sx={{ align: 'center', m: 2}}>
                   <Grid item  key={uuidv4()}>
                   <FilmCard key={uuidv4()} film={film}  />
                   </Grid>
