@@ -26,7 +26,7 @@ export default function FilmsCard({ film,}) {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: isLargeScreen ? 800 : '100%',
-        height: isLargeScreen ? 800 : '95%',
+        height: isLargeScreen ? 800 : '85%',
         bgcolor: 'background.paper',
         border: '2px solid #000',
         borderRadius: 4,
