@@ -88,7 +88,7 @@ const ResponsiveAppBar = ({dark, setDark}) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <img src="http://thecraftchop.bravesites.com/files/images/starwars.svg"
+            <img src="http://thecraftchop.bravesites.com/files/images/starwars.svg" alt="starwars Logo"
           style={{height: "120px"}}></img>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
