@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Switch } from '@mui/material';
 
-const pages = ['Planets', 'Spaceships', 'Vehicles', 'People', 'Films', 'Species'];
+const pages = ['Films'];
 
 const ResponsiveAppBar = ({dark, setDark}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

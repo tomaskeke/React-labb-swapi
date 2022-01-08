@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { v4 as uuidv4 } from 'uuid';
 import Box from '@mui/material/Box';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { useState } from 'react'
 import Characters from '../Characters/Characters'
 import { Modal, Divider } from '@mui/material';
@@ -17,14 +18,15 @@ export default function FilmsCard({ film,}) {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const isLargeScreen = useMediaQuery('(min-width: 768px)');
 
     const style = {
         position: 'absolute',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 800,
-        height: 800,
+        width: isLargeScreen ? 800 : '100%',
+        height: isLargeScreen ? 800 : '95%',
         bgcolor: 'background.paper',
         border: '2px solid #000',
         borderRadius: 4,
@@ -35,8 +37,6 @@ export default function FilmsCard({ film,}) {
         p: 4,
       };
       
-
-
     return (
         <Box>
          <Card variant="outlined" key={uuidv4()}>        

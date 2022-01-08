@@ -1,7 +1,7 @@
 import FilmCard from "../../components/FilmCard/FilmCard"
 import { useState, useEffect } from "react"
 import { Grid, Paper } from "@mui/material"
-import LoadingSpinner from "../../components/common/icons/LoadingSpinner/LoadingSpinner"
+import LoadingSpinner from "../../components/common/LoadingSpinner/LoadingSpinner"
 import { Box } from '@mui/material'
 import { v4 as uuidv4 } from 'uuid'
 

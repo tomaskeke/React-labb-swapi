@@ -4,7 +4,6 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
 import { Box, Divider } from '@mui/material';
 
 const Accordion = styled((props) => (
@@ -52,13 +51,13 @@ export default function CustomizedAccordions({ character }) {
 
   return (
     <Box>
-      <Accordion onChange={handleChange('panel1')} sx={{m: 2}}>
+      <Accordion onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           {character.name}
         </AccordionSummary>
         <AccordionDetails>
-          <Box sx={{ display: 'flex', width: '100%', flexDirection: 'row', textAlign: 'left' }} spacing={2}>
-              <Typography component={'span'} sx={{ width: '100%' }}>
+          <Box sx={{ display: 'flex', flexDirection: 'row', textAlign: 'left' }} spacing={2}>
+              <Box sx={{ width: '100%' }}>
                 Name: {character.name}
                 <Divider />
                 Mass: {character.mass}
@@ -66,9 +65,9 @@ export default function CustomizedAccordions({ character }) {
                 Hair color: {character.hair_color}
                 <Divider />
                 Skin color: {character.skin_color}
-                </Typography>
-                <Typography component={'span'} sx={{width: '100%'}}>
                 <Divider />
+              </Box>
+              <Box sx={{width: '100%'}}>
                 Height: {character.height}
                 <Divider />
                 Eye color:  {character.eye_color}
@@ -77,7 +76,7 @@ export default function CustomizedAccordions({ character }) {
                 <Divider />
                 Gender: {character.gender}
                 <Divider />
-                </Typography>
+              </Box>
           </Box>
         </AccordionDetails>
       </Accordion>

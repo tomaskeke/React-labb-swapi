@@ -3,7 +3,6 @@ import { LinearProgress, Box } from "@mui/material";
 
 
 const LoadingSpinner = () => {
-
     return (
         <Box sx={{width: '100%'}}>
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
