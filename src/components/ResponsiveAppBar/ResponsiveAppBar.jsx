@@ -103,7 +103,7 @@ const ResponsiveAppBar = ({dark, setDark}) => {
             ))}
           </Box>
           <Typography>Use Darkmode</Typography>
-        <Switch onClick={handleDarkMode}  defaultChecked  color="warning"/>          
+        <Switch onClick={handleDarkMode}  defaultUnchecked  color="warning"/>          
         </Toolbar>
       </Container>
     </AppBar>
