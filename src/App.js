@@ -10,7 +10,7 @@ import Films from './Pages/Films/Films'
 const App = () => {
 
   
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
   const prefersDarkMode = useMediaQuery( dark ? '(prefers-color-scheme: dark )' : '(prefers-color-scheme: light');
 

@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Switch } from '@mui/material';
-
 const pages = ['Films'];
 
 const ResponsiveAppBar = ({dark, setDark}) => {

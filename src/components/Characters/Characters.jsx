@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {Typography, Box } from '@mui/material/';
+import { Box } from '@mui/material/';
 import Accordion from '../Accordion/Accordion';
 import LoadingSpinner from '../common/LoadingSpinner/LoadingSpinner';
 import { v4 as uuidv4 } from 'uuid'
