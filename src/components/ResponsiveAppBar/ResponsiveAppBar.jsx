@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Paper, Switch } from '@mui/material';
+import starwarsLogo from '../common/icons/starwars.png'
 const pages = ['Films'];
 
 const ResponsiveAppBar = ({dark, setDark}) => {
@@ -40,8 +41,8 @@ const ResponsiveAppBar = ({dark, setDark}) => {
             component="div"
             sx={{ display: { xs: 'none', md: 'flex' } }}
           >
-          <img src="http://thecraftchop.bravesites.com/files/images/starwars.svg"
-          style={{height: "120px"}}/>
+          <img src={starwarsLogo} alt="starwars logo"
+          style={{height: "80px", margin: "10px"}}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'} }}>
